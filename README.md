@@ -30,5 +30,4 @@ A React and Electron desktop app for Curaleaf's formulation and packaging (F&P) 
 - Ensure `.env` is not committed (excluded via `.gitignore`).
 - The `start:dist` script is Windows-specific.
 
-## License
-Licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
