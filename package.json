@@ -1,0 +1,93 @@
+{
+  "name": "fnp-tracker",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "homepage": ".",
+  "description": "FNP Tracker application for managing data with coloring functionality",
+  "author": "tg",
+  "scripts": {
+    "start": "concurrently \"cross-env BROWSER=none react-scripts start\" \"wait-on http://localhost:3000 --timeout 30000 && electron .\"",
+    "build": "react-scripts build",
+    "dist": "react-scripts build && electron-builder",
+    "electron": "wait-on file://./build/index.html && electron .",
+    "postbuild": "electron-builder",
+    "start:dist": "npm run dist && start dist\\FNP Tracker Setup 1.0.0.exe"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "^2.3.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "axios": "^1.7.7",
+    "electron-is-dev": "^3.0.1",
+    "exceljs": "^4.4.0",
+    "ffmpeg-static": "^5.2.0",
+    "lodash": "^4.17.21",
+    "papaparse": "^5.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0",
+    "react-tabs": "^6.1.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^32.1.2",
+    "electron-builder": "^25.0.5",
+    "react-scripts": "^5.0.1",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.curaleaf.fnptracker",
+    "productName": "FNP Tracker",
+    "files": [
+      "main.js",
+      "preload.js",
+      "build/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    },
+    "extends": null,
+    "win": {
+      "target": "nsis"
+    },
+    "extraMetadata": {
+      "main": "main.js"
+    },
+    "extraFiles": [
+      {
+        "from": "node_modules/ffmpeg-static/bin/win32/x64/ffmpeg.exe",
+        "to": "ffmpeg.exe"
+      },
+      {
+        "from": "node_modules/ffmpeg-static/bin/win32/x64/ffprobe.exe",
+        "to": "ffprobe.exe"
+      },
+      {
+        "from": "node_modules/ffmpeg-static/bin/win32/x64/ffmpeg.dll",
+        "to": "ffmpeg.dll"
+      }
+    ],
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
