@@ -127,8 +127,13 @@ CREATE TABLE fnp_tracker (
 ## Visuals
 Below are placeholders for screenshots showcasing the application's interface and features. (Replace this section with actual image links or filenames once provided.)
 
-Login Screen: [Insert image link or filename]
-Excel Upload Interface: [Insert image link or filename]
+Login Screen: ![image](https://github.com/user-attachments/assets/a78a5648-3bd6-488c-8d55-5c7a5f231434)
+Main Interface: ![image](https://github.com/user-attachments/assets/40394dc6-da01-4bde-a5a7-179453579304)
+Excel Upload Interface: ![image](https://github.com/user-attachments/assets/7074773f-b6f0-4611-b699-8ad18d1b9da7)
+![image](https://github.com/user-attachments/assets/bbd471a4-49c2-47be-8f7a-7d2e2d1676c4)
+![image](https://github.com/user-attachments/assets/d3bd549f-ad1c-4fc9-b66b-d6a52e5c45fc)
+
+
 Data Table with Color Coding: [Insert image link or filename]
 Audit Log View: [Insert image link or filename]
 
