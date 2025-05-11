@@ -1,4 +1,4 @@
-# FNP Tracker
+# F&P Tracker
 
 A React and Electron desktop application developed for Curaleaf to track formulation and packaging (F&P) processes. Integrated with Supabase for robust data storage and Auth0 for secure, role-based authentication, the app supports Excel file uploads, advanced data editing with a three-step confirmation process, color-coded visualization, and comprehensive audit logging for user actions.
 
