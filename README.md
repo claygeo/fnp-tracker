@@ -10,8 +10,6 @@ A React and Electron desktop application developed for Curaleaf to track formula
 - [Database Setup](#database-setup)
 - [Visuals](#visuals)
 - [Notes](#notes)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -116,13 +114,6 @@ CREATE TABLE fnp_tracker (
     packaging_status TEXT,
     CHECK (id IS NOT NULL)
 );
-
-## Notes:
-
-- Run the SQL code in the order provided, as duplicated_products has a foreign key referencing fnp_tracker.
-- The uuid-ossp extension is required for the audit_logs table’s UUID primary key.
-- Ensure Row-Level Security (RLS) is configured in Supabase if your application requires it (e.g., enable RLS and set policies via the Supabase dashboard).
--The audit_logs table uses a CHECK constraint to limit action_type to specific values (sign-in, submission, edit, delete, duplicate).
 
 ## Visuals
 
