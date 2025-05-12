@@ -132,10 +132,6 @@ Excel Upload Interface: ![image](https://github.com/user-attachments/assets/7074
 ![image](https://github.com/user-attachments/assets/bbd471a4-49c2-47be-8f7a-7d2e2d1676c4)
 ![image](https://github.com/user-attachments/assets/d3bd549f-ad1c-4fc9-b66b-d6a52e5c45fc)
 
-
-Data Table with Color Coding: [Insert image link or filename]
-Audit Log View: [Insert image link or filename]
-
 ## Notes:
 
 - Curaleaf Branding: Used with permission for this project.
