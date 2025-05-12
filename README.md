@@ -125,7 +125,6 @@ CREATE TABLE fnp_tracker (
 -The audit_logs table uses a CHECK constraint to limit action_type to specific values (sign-in, submission, edit, delete, duplicate).
 
 ## Visuals
-Below are placeholders for screenshots showcasing the application's interface and features. (Replace this section with actual image links or filenames once provided.)
 
 Login Screen: ![image](https://github.com/user-attachments/assets/a78a5648-3bd6-488c-8d55-5c7a5f231434)
 Main Interface: ![image](https://github.com/user-attachments/assets/40394dc6-da01-4bde-a5a7-179453579304)
